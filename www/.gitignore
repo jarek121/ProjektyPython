@@ -9,7 +9,7 @@ db.sqlite3
 .env
 /static/
 /media/
-/pluszaki_app/migrations/
+migrations/
 
 # Conda i środowiska wirtualne
 .conda/
