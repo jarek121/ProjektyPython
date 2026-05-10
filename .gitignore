@@ -24,3 +24,4 @@ ENV/
 
 # Postgres i logi
 *.log
+/www/pluszaki_app/migrations/*.py
