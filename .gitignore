@@ -1,3 +1,5 @@
+migrations/
+
 # Python - kompilaty i cache
 __pycache__/
 *.pyc
@@ -9,7 +11,6 @@ db.sqlite3
 .env
 /static/
 /media/
-migrations/
 
 # Conda i środowiska wirtualne
 .conda/
