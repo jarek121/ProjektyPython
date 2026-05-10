@@ -5,6 +5,7 @@ class Pluszak(models.Model):
     gatunek = models.CharField(max_length=100)
     opis = models.TextField(blank=True)
     data_dodania = models.DateTimeField(auto_now_add=True)
+    zapasy = models.IntegerField(default=0)
     
     def __str__(self):
         return self.imie
