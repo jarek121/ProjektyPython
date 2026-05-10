@@ -73,15 +73,13 @@ WSGI_APPLICATION = 'maskotki.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+import os
+import environ
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pluszaki',
-        'USER': 'postgres',
-        'PASSWORD': 'Kinga121',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+    'default': env.db(),
 }
 
 
