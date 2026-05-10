@@ -1,0 +1,24 @@
+# Python - kompilaty i cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django - sekrety i media
+db.sqlite3
+.env
+/static/
+/media/
+
+# Conda i środowiska wirtualne
+.conda/
+env/
+venv/
+ENV/
+
+# VS Code i ustawienia edytora
+.vscode/
+.idea/
+
+# Postgres i logi
+*.log
