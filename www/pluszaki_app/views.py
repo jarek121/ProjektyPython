@@ -6,6 +6,9 @@ def lista_pluszakow(request):
     wszystkie_pluszaki = Pluszak.objects.all() 
     return render(request, 'pluszaki_app/pluszak.html', {'pluszaki': wszystkie_pluszaki})
 
+def glowna(request):
+    return render(request, 'pluszaki_app/glowna.html')
+
 # Funkcja tymczasowa do wyświetlenia widoku 
 
 # def lista_pluszakow(request):
