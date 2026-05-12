@@ -4,7 +4,7 @@
     <title>Moje Pluszaki</title>
 </head>
 <body>
-    Ile pluszaków w bazie: {{ pluszaki|length }}
+    {% comment %} Ile pluszaków w bazie: {{ pluszaki|length }} {% endcomment %}
     <ul>
     {% for p in pluszaki %}
         <li>{{ p.imie }} - {{ p.gatunek }}</li> 
