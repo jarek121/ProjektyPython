@@ -4,7 +4,13 @@
     <title>Moje Pluszaki</title>
 </head>
 <body>
-    <h1>Lista Twoich Pluszaków</h1>
-    <p>To jest treść z szablonu HTML!</p>
+    Ile pluszaków w bazie: {{ pluszaki|length }}
+    <ul>
+    {% for p in pluszaki %}
+        <li>{{ p.imie }} - {{ p.gatunek }}</li> 
+    {% empty %}
+        <li>Na razie nie masz żadnych pluszaków w bazie.</li>
+    {% endfor %}
+</ul>
 </body>
 </html>
