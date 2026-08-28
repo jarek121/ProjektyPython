@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mój Formularz</title></head>
+<body>
+    <h2>Wpisz swoje dane:</h2>
+    <!-- Formularz wysyła dane metodą POST -->
+    <form method="post">
+        {% csrf_token %} <!-- Specjalne zabezpieczenie Django, bez tego nie zadziała -->
+        {{ formularz.as_p }} <!-- Django samo wygeneruje pola z forms.py w akapitach <p> -->
+        <button type="submit">Wyślij</button>
+    </form>
+</body>
+</html>

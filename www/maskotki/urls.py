@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pluszaki_app.urls')),
+    path('formularz/', views.pokaz_formularz, name='moj_formularz'),
 ]

@@ -1,13 +1,20 @@
-from django.shortcuts import render
-from .models import Pluszak
-from django.http import HttpResponse
+from django.views.generic import TemplateView
 
-def lista_pluszakow(request):
-    wszystkie_pluszaki = Pluszak.objects.all() 
-    return render(request, 'pluszaki_app/pluszak.html', {'pluszaki': wszystkie_pluszaki})
+class PluszakView(TemplateView):
+    template_name = "pluszaki_app/pluszak.html"
 
-def glowna(request):
-    return render(request, 'pluszaki_app/glowna.html')
+class Glowna(TemplateView):
+    template_name = "glowna.html"
+# from django.shortcuts import render
+# from .models import Pluszak
+# from django.http import HttpResponse
+
+# def lista_pluszakow(request):
+#     wszystkie_pluszaki = Pluszak.objects.all() 
+#     return render(request, 'pluszaki_app/pluszak.html', {'pluszaki': wszystkie_pluszaki})
+
+# def glowna(request):
+#     return render(request, 'pluszaki_app/glowna.html')
 
 # Funkcja tymczasowa do wyświetlenia widoku 
 
