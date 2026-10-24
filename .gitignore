@@ -21,7 +21,8 @@ ENV/
 # VS Code i ustawienia edytora
 .vscode/
 .idea/
-
+.venv/
 # Postgres i logi
 *.log
 /www/pluszaki_app/migrations/*.py
+.vscode
